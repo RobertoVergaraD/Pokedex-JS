@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon .png">
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <a><div class="logo">
+            <img src="./img/Logo_de_Pokémon_(EN).png" alt="logo-pokemon">
+        </div></a>
+        <a><img src="./img/pikachurun.gif" alt="pikachurun" width="150px"></a>
+        <a><div class="logo-nombre">POKEDEX</div></a>
+        
+    </header>
+
+    <div class="pokedex">
+        <div class="form">
+            <input type="text" placeholder="bulbasaur" id="pokeName" name="pokeName"><br>       
+            <button onclick="fetchPokemon()">Cambiar Pokemon</button>
+        </div>
+
+        <div class="screen">
+            <div class="titulo">
+                <h2 class="numero" id="pokeNum"># 1</h2>
+                <h2 class="nombre-pok" id="pokemon">BULBASAUR</h2>
+            </div>
+            <div class="imagen"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokemon" id="pokeImg" width="500px"></div>
+        </div>
+        
+        <div class="informacion">
+        <div class="info-tipos">
+            <p class="info-title">Tipos:</p>
+            <p class="tipo" id="poketipos">GRASS, POISON</p><br>
+        </div>
+        <div class="info-box">
+            <p class="info-title">Altura:</p>
+            <p class="info-text" id="pokealt">0.7 m</p>
+        
+            <p class="info-title">Peso:</p>
+            <p class="info-text" id="pokepes">6.9 kg</p><br>
+        </div>    
+        <div class="info-box">
+            <p class="info-title">Movimientos:</p>
+            <p class="moves" id="pokemoves">OVERGROW, CHLOROPHYLL</p><br>
+        </div>
+        <div class="pokestats"><br>
+            <p class="info-title">Estadisticas:</p>
+            <p id="pokehp">HP: 45</p>
+            <p id="atkStats">ATK: 49</p>
+            <p id="defStats">DEF: 49</p>
+            <p id="spatkStats">SP ATK: 65</p>
+            <p id="spdefStats">SP DEF: 65</p>
+            <p id="speedStats">SPEED: 45</p>
+        </div>
+    </div>
+     
+        
+    </div>
+</body>
+
+<footer class="pie-pagina">
+        <div class="grupo1">
+            <div class="caja">
+                <figure>
+                    <a href="#">
+                        <img src="./img/lobogo2.png" alt="logo de la empresa">
+                    </a>
+                </figure>
+            </div>
+        
+            <div class="caja">
+                <h2>Nunca dejes de ser un maestro Pokemon!</h2>
+                <div class="img-foot">
+                <img src="./img/footer.png" alt="imagen-footer-pokemones">
+                <audio controls>
+                    <source src="./audio/fondo.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2022 <b>Wolf</b> - Todos los Derechos Reservados.</small>
+        </div>
+        
+<!--------------------------------Scripts--------------------------------->
+    <script src="./Pokedex.js"></script>
+</footer>
+</html>
